@@ -1,37 +1,43 @@
-/* Estilos para esconder o modal por padrão */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
+
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-/* Estilos para o conteúdo do modal */
 .modal-content {
-  background-color: #fefefe;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+
   margin: 15% auto;
   padding: 20px;
-  border: 1px solid #888;
-  width: 40%;
+  border-radius: 1rem;
+
+  border: 1px solid #888888;
+  background-color: #fefefe;
 }
 
-/* Estilos para o botão de fechar */
 .close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  float: left;
+
+  font-size: 2.2rem;
   font-weight: bold;
+
+  color: #aaaaaa;
 }
 
 /* Estilos para o botão de fechar (quando passa o mouse por cima) */
 .close:hover,
 .close:focus {
-    text-decoration: none;
-    cursor: pointer;
-    
-    color: black;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: #000000;
 }

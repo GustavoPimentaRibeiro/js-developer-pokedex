@@ -82,6 +82,7 @@
 .pokemon {
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 
   margin: 0.5rem;
   padding: 1rem;
@@ -112,7 +113,7 @@
 
 .pokemon .detail .types {
   list-style: none;
-  
+
   padding: 0;
   margin: 0;
 }
