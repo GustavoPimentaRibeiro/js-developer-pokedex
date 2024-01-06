@@ -1,15 +1,25 @@
+const modalInfos = document.getElementById("pokemonModalInfos");
+
 async function openModal(id, type) {
-  const pokemonDetail = document.getElementById("modalContent");
-  pokemonDetail.className = `modal-content ${type}`;
+  const pokemonCompleteInfos = await getPokemonInfos(id);
 
-  const pokemon = await pokeApi.getPokemonModalInfo(id);
+  const newHtml = await convertPokemonToDetailedInfos(pokemonCompleteInfos);
+  modalInfos.innerHTML = newHtml;
 
-  console.log(pokemon);
-
+  await modifyModalColor(type);
+  
   document.getElementById("modalPokemon").style.display = "block";
 }
 
-// Função para fechar o modal
 function closeModal() {
   document.getElementById("modalPokemon").style.display = "none";
+}
+
+function getPokemonInfos(id) {
+  return pokeApi.getPokemonModalInfo(id);
+}
+
+function modifyModalColor(type) {
+  const pokemonDetail = document.getElementById("modalContent");
+  pokemonDetail.className = `modal-content ${type}`;
 }

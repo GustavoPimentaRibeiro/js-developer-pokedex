@@ -14,20 +14,20 @@
 .modal-content {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 35%;
 
   margin: 15% auto;
-  padding: 20px;
   border-radius: 1rem;
 
-  border: 1px solid #888888;
   background-color: #fefefe;
 }
 
 .close {
-  float: left;
+  display: flex;
+  justify-content: flex-start;
+  margin: 0.5rem 0rem 0rem 0.5rem;
 
-  font-size: 2.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
 
   color: #ffffff;
@@ -39,5 +39,87 @@
   text-decoration: none;
   cursor: pointer;
 
-  color: #888888;
+  color: #666666;
+}
+
+#pokemonModalInfos {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0.3rem;
+}
+
+#mBasicInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 0.5rem;
+  padding: 0rem 0.5rem;
+}
+
+#mBasicInfos #mNameNumberType {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 1rem;
+}
+
+#mBasicInfos #mNameNumberType #mName {
+  text-transform: capitalize;
+  font-size: 1.8rem;
+
+  color: #ffffff;
+}
+
+#mBasicInfos #mNameNumberType #mNumber {
+  text-align: right;
+  font-size: 0.725rem;
+  
+  opacity: 0.3;
+  color: #000000;
+}
+
+#mBasicInfos img {
+  z-index: 1;
+  max-width: 100%;
+  height: 120px;
+}
+
+#mBasicInfos #mTypes {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+
+  gap: 0.3rem;
+  padding: 0;
+  margin: 0;
+}
+
+#mBasicInfos #mTypes #mType {
+  font-size: 0.725rem;
+  text-align: center;
+
+  padding: 0.25rem 0.5rem;
+  border-radius: 1rem;
+
+  filter: brightness(1.1);
+  color: #ffffff;
+}
+
+#mDetailedInfos {
+  width: 100%;
+  height: 300px;
+
+  border-radius: 2rem;
+  transform: translateY(-1.1rem);
+
+  background: #ffffff;
 }
