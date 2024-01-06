@@ -30,7 +30,7 @@
   font-size: 2.2rem;
   font-weight: bold;
 
-  color: #aaaaaa;
+  color: #ffffff;
 }
 
 /* Estilos para o botão de fechar (quando passa o mouse por cima) */
@@ -39,5 +39,5 @@
   text-decoration: none;
   cursor: pointer;
 
-  color: #000000;
+  color: #888888;
 }

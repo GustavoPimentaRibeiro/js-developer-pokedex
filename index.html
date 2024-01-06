@@ -33,12 +33,14 @@
     <section class="content">
       <h1>Pokedex</h1>
 
-      <!-- O modal -->
+      <!-- ..... Modal here ..... -->
       <div id="modalPokemon" class="modal">
-        <!-- Conteúdo do modal -->
-        <div class="modal-content">
+        <div id="modalContent" class="modal-content">
           <span class="close" onclick="closeModal()">&times;</span>
-          <p>Este é um exemplo de modal simples.</p>
+
+          <div id="pokemonModalInfos">
+            <!-- ..... Pokemon Modal details here ..... -->
+          </div>
         </div>
       </div>
 
@@ -51,7 +53,7 @@
       </div>
     </section>
 
-    <!-- Nosso JS -->
+    <!-- Our JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
     <script src="/assets/js/modal.js"></script>

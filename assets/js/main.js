@@ -34,6 +34,7 @@ function loadPokemonItens(offset, limit) {
   });
 }
 
+// Pagination
 loadPokemonItens(offset, limit);
 
 loadMoreButton.addEventListener("click", () => {
