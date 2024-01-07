@@ -16,7 +16,3 @@ Este é um desafio do curso **Desenvolvimento Front-End com Angular** da [DIO](h
 
 ## Fontes
 - Google Fonts (Roboto 100, 300, 500 e 700)
-
-## Site do projeto
-
-**Link do projeto**: [Pokedex]()
