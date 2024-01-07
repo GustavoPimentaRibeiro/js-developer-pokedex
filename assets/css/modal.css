@@ -14,7 +14,7 @@
 .modal-content {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 20%;
 
   margin: 15% auto;
   border-radius: 1rem;
@@ -80,7 +80,7 @@
 #mBasicInfos #mNameNumberType #mNumber {
   text-align: right;
   font-size: 0.725rem;
-  
+
   opacity: 0.3;
   color: #000000;
 }
@@ -121,7 +121,7 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 1rem;
   padding: 2rem 1rem;
 
@@ -131,7 +131,8 @@
   background: #ffffff;
 }
 
-#mDetailedInfos #mMeasurements, #mDetailedInfos #mStats {
+#mDetailedInfos #mMeasurements,
+#mDetailedInfos #mStats {
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -143,7 +144,7 @@
 
   font-size: 0.9rem;
   margin: 0;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 .highlight .attribute {
@@ -154,4 +155,34 @@
   justify-content: flex-end;
 
   color: #777777;
+}
+
+@media screen and (min-width: 320px) {
+  .modal-content {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .modal-content {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .modal-content {
+    width: 40%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .modal-content {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .modal-content {
+    width: 20%;
+  }
 }

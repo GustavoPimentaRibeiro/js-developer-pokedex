@@ -48,10 +48,10 @@ function convertPokemonToDetailedInfos(pokemon) {
         <p class="highlight">Infos</p>
         <p class="highlight"><img src="assets/images/height.png" title="height" alt="height" /> <span class="attribute">${
           pokemon.height
-        }in</span></p>
+        } in</span></p>
         <p class="highlight"><img src="assets/images/weight.png" title="weight" alt="weight" /> <span class="attribute">${
           pokemon.weight
-        }lbs</span></p>
+        } lbs</span></p>
       </div>
 
       <div id="mStats">

@@ -2,12 +2,10 @@ const modalInfos = document.getElementById("pokemonModalInfos");
 
 async function openModal(id, type) {
   const pokemonCompleteInfos = await getPokemonInfos(id);
-
   const newHtml = await convertPokemonToDetailedInfos(pokemonCompleteInfos);
+  await modifyModalColor(type);
   modalInfos.innerHTML = newHtml;
 
-  await modifyModalColor(type);
-  
   document.getElementById("modalPokemon").style.display = "block";
 }
 
