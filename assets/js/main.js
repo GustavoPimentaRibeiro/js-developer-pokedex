@@ -44,7 +44,37 @@ function convertPokemonToDetailedInfos(pokemon) {
       <img src="${pokemon.photo}" alt="${pokemon.name}">
     </div>
     <div id="mDetailedInfos">
-      
+      <div id="mMeasurements">
+        <p class="highlight">Infos</p>
+        <p class="highlight"><img src="assets/images/height.png" title="height" alt="height" /> <span class="attribute">${
+          pokemon.height
+        }in</span></p>
+        <p class="highlight"><img src="assets/images/weight.png" title="weight" alt="weight" /> <span class="attribute">${
+          pokemon.weight
+        }lbs</span></p>
+      </div>
+
+      <div id="mStats">
+        <p class="highlight">Stats</p>
+        <p class="highlight"><img src="assets/images/hp.svg" title="health" alt="health" /> <span class="attribute">${
+          pokemon.hp
+        }<span></p>
+        <p class="highlight"><img src="assets/images/attack.png" title="attack" alt="attack" /> <span class="attribute">${
+          pokemon.attack
+        }<span></p>
+        <p class="highlight"><img src="assets/images/special_attack.png" title="special_attack" alt="special_attack" /> <span class="attribute">${
+          pokemon.special_attack
+        }<span></p>
+        <p class="highlight"><img src="assets/images/defense.png" title="defense" alt="defense" /> <span class="attribute">${
+          pokemon.defense
+        }<span></p>
+        <p class="highlight"><img src="assets/images/special_defense.png" title="special_defense" alt="special_defense" /> <span class="attribute">${
+          pokemon.special_defense
+        }<span></p>
+        <p class="highlight"><img src="assets/images/speed.png" title="speed" alt="speed" /> <span class="attribute">${
+          pokemon.speed
+        }<span></p>
+      </div>
     </div>
   `;
 }
