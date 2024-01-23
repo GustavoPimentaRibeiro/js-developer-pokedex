@@ -22,6 +22,6 @@ Este é um desafio do curso **Desenvolvimento Front-End com Angular** da [DIO](h
 
 - Google Fonts (Roboto 100, 300, 500 e 700)
 
-## Link de aceso
+## Link de acesso
 
 [Link do Projeto](https://gustavopimentaribeiro.github.io/js-developer-pokedex/)
